@@ -7,7 +7,15 @@ defmodule KoreanDictionary.MixProject do
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+
+      # Docs
+      name: "Korean Dictionary",
+      source_url: "https://github.com/JorisKok/korean_dictionary",
+      docs: [
+        main: "Korean Dictionary",
+        extras: ["README.md"]
+      ],
     ]
   end
 

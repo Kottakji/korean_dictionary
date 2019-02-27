@@ -4,6 +4,8 @@ elixir:
 otp_release:
   - 21.0
 sudo: false
+before_install:
+  - openssl aes-256-cbc -K $encrypted_ceeba745adea_key -iv $encrypted_ceeba745adea_iv -in config.exs.enc -out config/config.exs -d
 before_script:
   - mix deps.get
 script:
