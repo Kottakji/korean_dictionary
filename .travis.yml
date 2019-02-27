@@ -9,7 +9,6 @@ before_script:
 script:
   - mix test
 after_script:
-  - MIX_ENV=docs mix deps.get
   - MIX_ENV=docs mix inch.report
 before_install:
   - openssl aes-256-cbc -K $encrypted_ceeba745adea_key -iv $encrypted_ceeba745adea_iv

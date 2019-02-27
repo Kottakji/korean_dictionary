@@ -52,7 +52,7 @@ defmodule KoreanDictionary.MixProject do
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},
       {:assert_value, ">= 0.0.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
-      {:inch_ex, only: :docs}
+      {:inch_ex, github: "rrrene/inch_ex", only: [:dev, :test]}
     ]
   end
 end
