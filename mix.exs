@@ -12,10 +12,10 @@ defmodule KoreanDictionary.MixProject do
       package: package(),
 
       # Docs
-      name: "KoreanDictionary",
+      name: "Korean Dictionary",
       source_url: "https://github.com/JorisKok/korean_dictionary",
       docs: [
-        main: "Korean Dictionary",
+        main: "KoreanDictionary",
         extras: ["README.md"]
       ],
     ]
