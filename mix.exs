@@ -51,7 +51,8 @@ defmodule KoreanDictionary.MixProject do
       # Only :dev
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},
       {:assert_value, ">= 0.0.0", only: [:dev, :test]},
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
+      {:inch_ex, only: :docs}
     ]
   end
 end
