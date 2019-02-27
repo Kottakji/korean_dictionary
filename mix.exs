@@ -8,9 +8,11 @@ defmodule KoreanDictionary.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      description: description(),
+      package: package(),
 
       # Docs
-      name: "Korean Dictionary",
+      name: "KoreanDictionary",
       source_url: "https://github.com/JorisKok/korean_dictionary",
       docs: [
         main: "Korean Dictionary",
@@ -19,6 +21,21 @@ defmodule KoreanDictionary.MixProject do
     ]
   end
 
+  defp description do
+    "A Korean dictionary based on KRDict\n
+    Supports Korean to English words and sentences\n
+    Requires an API key for KRDict (which is free)\n
+    Get your key at https://krdict.korean.go.kr/openApi/openApiInfo"
+  end
+
+  defp package do
+    [
+      licenses: ["Apache 2.0"],
+      links: %{
+        "GitHub" => "https://github.com/JorisKok/korean_dictionary"
+      }
+    ]
+  end
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
