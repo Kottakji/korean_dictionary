@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+    <title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+    <link>https://krdict.korean.go.kr</link>
+    <description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+    <lastBuildDate>20190227170724</lastBuildDate>
+    <total>169</total>
+    <start>1</start>
+    <num>10</num>
+    <item>
+        <target_code>28394</target_code>
+        <word>남</word>
+        <sup_no>1</sup_no>
+        <pos>명사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=28394</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>내가 아닌 다른 사람.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>others; another person</trans_word>
+                <trans_dfn>A person other than me.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>2</sense_order>
+            <definition>나와 관계가 없거나 관계가 끊어진 사람.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>stranger</trans_word>
+                <trans_dfn>A person who has no relationship or has broken a relationship with me.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>36848</target_code>
+        <word>남</word>
+        <sup_no>2</sup_no>
+        <pos>명사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=36848</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>남성으로 태어난 사람.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>male; man</trans_word>
+                <trans_dfn>A person born as a man.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>36849</target_code>
+        <word>남</word>
+        <sup_no>3</sup_no>
+        <pos>명사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=36849</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>동서남북의 네 방위 중의 하나로 나침반의 에스 극이 가리키는 쪽.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>south</trans_word>
+                <trans_dfn>One of four directions, east, west, south, and north, at which the S needle of a compass
+                    points.
+                </trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>73346</target_code>
+        <word>남-</word>
+        <sup_no>2</sup_no>
+        <pos>접사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=73346</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>‘남자’의 뜻을 더하는 접두사.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>nam-</trans_word>
+                <trans_dfn>A prefix used to mean a male.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>73891</target_code>
+        <word>-남</word>
+        <sup_no>1</sup_no>
+        <pos>어미</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=73891</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>(아주낮춤으로) 어떠한 사실에 대해 자신에게 묻거나 불평함을 나타내는 종결 어미.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>-nam</trans_word>
+                <trans_dfn>(formal, highly addressee-lowering) A sentence-final ending used when asking oneself or
+                    complaining about a certain fact.
+                </trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>91482</target_code>
+        <word>-남</word>
+        <sup_no>3</sup_no>
+        <pos>접사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=91482</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>‘남자’의 뜻을 더하는 접미사.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>-nam</trans_word>
+                <trans_dfn>A suffix used to mean a man.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>36941</target_code>
+        <word>남남</word>
+        <sup_no>0</sup_no>
+        <pos>명사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=36941</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>서로 아무 관계가 없는 사람들. 또는 그런 사이.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>persons unrelated to each other</trans_word>
+                <trans_dfn>People who are not related to each other, or the relationship between them.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>64371</target_code>
+        <word>남기다</word>
+        <sup_no>0</sup_no>
+        <pos>동사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=64371</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>다 쓰지 않고 나머지가 있게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>leave</trans_word>
+                <trans_dfn>To leave part of something without using it up.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>2</sense_order>
+            <definition>이익이 생기게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>make profit</trans_word>
+                <trans_dfn>To cause profits to be made.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>3</sense_order>
+            <definition>떠나게 하지 않고 있던 그대로 있게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>leave; cause to stay</trans_word>
+                <trans_dfn>To make something or someone remain where he/she or it was without leaving.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>4</sense_order>
+            <definition>잊히지 않게 하거나 나중에까지 전해지게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>leave; hand down</trans_word>
+                <trans_dfn>To cause something not to be forgotten, or to be handed down until later.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>5</sense_order>
+            <definition>재산 등을 후대에 물려주다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>hand down</trans_word>
+                <trans_dfn>To hand down one's property, etc., to posterity.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>6</sense_order>
+            <definition>감정이나 기억 등이 없어지지 않고 계속 있게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>leave; imprint</trans_word>
+                <trans_dfn>To cause one's feelings or memory to last without disappearing.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>7</sense_order>
+            <definition>어떤 일이나 상황의 결과로 무엇이 생기게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>leave; cause to occur</trans_word>
+                <trans_dfn>To cause something to occur as a result of a certain affair or phenomenon.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>8</sense_order>
+            <definition>정해진 시간을 다 채우지 않거나 정해진 거리에 도달하지 않게 하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>cause to be left</trans_word>
+                <trans_dfn>To fail to fill up a certain amount of time or reach a certain distance.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>60628</target_code>
+        <word>남녀</word>
+        <sup_no>0</sup_no>
+        <pos>명사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=60628</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>남자와 여자.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>man and woman</trans_word>
+                <trans_dfn>A man and a woman.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+    <item>
+        <target_code>64552</target_code>
+        <word>남다</word>
+        <sup_no>0</sup_no>
+        <pos>동사</pos>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=64552</link>
+        <sense>
+            <sense_order>1</sense_order>
+            <definition>다 쓰지 않아서 나머지가 있게 되다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>remain; be left</trans_word>
+                <trans_dfn>For part of something to remain without being used up.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>2</sense_order>
+            <definition>이익이 생기다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>be profitable</trans_word>
+                <trans_dfn>For profits to occur.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>3</sense_order>
+            <definition>나눗셈에서 나머지가 얼마 있게 되다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>be left</trans_word>
+                <trans_dfn>For the remainder to occur in doing the division.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>4</sense_order>
+            <definition>떠나지 않고 있던 그대로 있다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>remain; stay</trans_word>
+                <trans_dfn>To remain where one was without leaving.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>5</sense_order>
+            <definition>잊히지 않다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>be left; be remembered</trans_word>
+                <trans_dfn>To not be forgotten.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>6</sense_order>
+            <definition>뒤에까지 전하다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>hand down</trans_word>
+                <trans_dfn>To hand down something until later.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>7</sense_order>
+            <definition>어떤 상황의 결과로 생긴 상태가 있게 되다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>remain; be left</trans_word>
+                <trans_dfn>For a certain state to come to occur as a result of a certain situation.</trans_dfn>
+            </translation>
+        </sense>
+        <sense>
+            <sense_order>8</sense_order>
+            <definition>정도를 넘다.</definition>
+            <translation>
+                <trans_lang>영어</trans_lang>
+                <trans_word>exceed; go beyond</trans_word>
+                <trans_dfn>To go beyond limit.</trans_dfn>
+            </translation>
+        </sense>
+    </item>
+</channel>

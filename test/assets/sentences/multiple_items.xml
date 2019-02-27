@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+    <title>한국어 기초사전 개발 지원(Open API) - 사전 검색</title>
+    <link>https://krdict.korean.go.kr</link>
+    <description>한국어 기초사전 개발 지원(Open API) - 사전 검색 결과</description>
+    <lastBuildDate>20190227164246</lastBuildDate>
+    <total>328</total>
+    <start>1</start>
+    <num>10</num>
+    <item>
+        <target_code>28045</target_code>
+        <word>가극단</word>
+        <sup_no>0</sup_no>
+        <example>이 오페라는 한국어로 공연한대.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=28045</link>
+    </item>
+    <item>
+        <target_code>17882</target_code>
+        <word>가리키다</word>
+        <sup_no>0</sup_no>
+        <example>한국어에는 특별한 나이를 가리키는 말이 여럿 있다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=17882</link>
+    </item>
+    <item>
+        <target_code>20555</target_code>
+        <word>강세</word>
+        <sup_no>0</sup_no>
+        <example>한국어는 강세가 없어서 나는 강세를 가진 언어를 배우는 게 어려웠다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=20555</link>
+    </item>
+    <item>
+        <target_code>27331</target_code>
+        <word>거센소리</word>
+        <sup_no>0</sup_no>
+        <example>한국어를 배우는 외국인들은 된소리와 거센소리의 발음을 어려워한다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=27331</link>
+    </item>
+    <item>
+        <target_code>54905</target_code>
+        <word>건너오다</word>
+        <sup_no>0</sup_no>
+        <example>내 외국인 친구는 한국에 건너온 지 얼마 되지 않았지만 한국어를 꽤 잘한다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=54905</link>
+    </item>
+    <item>
+        <target_code>66974</target_code>
+        <word>게서</word>
+        <sup_no>1</sup_no>
+        <example>작년에 제게서 한국어를 배운 일본 학생입니다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=66974</link>
+    </item>
+    <item>
+        <target_code>28461</target_code>
+        <word>겨레말</word>
+        <sup_no>0</sup_no>
+        <example>한국인들의 겨레말은 곧 한국어이다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=28461</link>
+    </item>
+    <item>
+        <target_code>28783</target_code>
+        <word>격</word>
+        <sup_no>1</sup_no>
+        <example>한국어의 조사 중에서 격을 나타내는 조사를 격 조사라고 한다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=28783</link>
+    </item>
+    <item>
+        <target_code>28783</target_code>
+        <word>격</word>
+        <sup_no>1</sup_no>
+        <example>한국어는 주로 조사를 사용하여 문장 내에서 격을 나타낸다.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=28783</link>
+    </item>
+    <item>
+        <target_code>33047</target_code>
+        <word>격음</word>
+        <sup_no>0</sup_no>
+        <example>한국어 격음.</example>
+        <link>https://krdict.korean.go.kr/dicSearch/SearchView?ParaWordNo=33047</link>
+    </item>
+</channel>
