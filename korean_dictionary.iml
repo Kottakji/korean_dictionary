@@ -46,6 +46,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/hackney" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/httpoison" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/idna" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/inch_ex" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/jason" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/metrics" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/mimerl" />

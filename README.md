@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/JorisKok/korean_dictionary.svg?branch=master)](https://travis-ci.org/JorisKok/korean_dictionary)
 [![Hex pm](http://img.shields.io/hexpm/v/korean_dictionary.svg?style=flat)](https://hex.pm/packages/korean_dictionary)
 
-Docs: [https://hexdocs.pm/chinese_dictionary](https://hexdocs.pm/korean_dictionary).
+Docs: [https://hexdocs.pm/korean_dictionary](https://hexdocs.pm/korean_dictionary).
 
 
 ## How to use
