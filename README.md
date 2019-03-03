@@ -28,12 +28,6 @@ def deps do
 end
 ```
 
-##### In your module
-
-```elixir
-alias KoreanDictionary
-```
-
 ##### For English word definitions
 ```elixir
 KoreanDictionary.korean_to_english("한국어")
