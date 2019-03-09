@@ -18,7 +18,7 @@ defmodule KoreanDictionary.KRDictAPI do
   end
 
   @doc """
-  Get the English sentence definitions
+  Get the Korean sentence definitions
   https://krdict.korean.go.kr/openApi/openApiInfo
   """
   def get_sentences(korean, "english") do
