@@ -10,10 +10,15 @@ defmodule KoreanDictionary.KRDict do
     |> get_all_words_from_xml
   end
 
+  def korean_to_korean(korean) do
+    KRDictAPI.get_words(korean, "korean")
+    |> get_all_korean_words_from_xml(korean)
+  end
+
   @doc """
   Translate to a list of example sentences
   """
-  def korean_to_english_example_sentences(korean) do
+  def korean_example_sentences(korean) do
     KRDictAPI.get_sentences(korean, "english")
     |> get_all_sentences_from_xml
   end
@@ -33,6 +38,15 @@ defmodule KoreanDictionary.KRDict do
       |> Exml.get("//trans_dfn")
 
     zip(words, definitions)
+  end
+
+  @doc """
+  Get all the korean words from the response xml
+  """
+  def get_all_korean_words_from_xml(xml, korean) do
+    xml
+    |> Exml.parse()
+    |> Exml.get("/channel/item[word='" <> korean <> "']/sense/definition")
   end
 
   @doc """

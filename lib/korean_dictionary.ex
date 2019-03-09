@@ -13,10 +13,16 @@ defmodule KoreanDictionary do
   """
   defdelegate korean_to_english(korean), to: KRDict
 
+
   @doc """
-  Translate Korean to English
+  Translate Korean to Korean
+  Returns the word definitions in a list
+  """
+  defdelegate korean_to_korean(korean), to: KRDict
+
+  @doc """
   Returns example sentences in a list
   No translations per sentence are available
   """
-  defdelegate korean_to_english_example_sentences(korean), to: KRDict
+  defdelegate korean_example_sentences(korean), to: KRDict
 end

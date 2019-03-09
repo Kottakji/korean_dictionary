@@ -37,9 +37,25 @@ which will return a list with tuples {word, definition}
 [{"Korean; Korean language", "The language used by the Korean people."}]
 ```
 
-##### For English sentences
+##### For Korean to Korean (with an 'easy' explanation describing the word)
 ```elixir
-KoreanDictionary.korean_to_english_example_sentences("공부하다")
+KoreanDictionary.korean_to_korean("남")
+```
+
+which will return a list of explanations
+```elixir
+[
+  "내가 아닌 다른 사람.",
+  "나와 관계가 없거나 관계가 끊어진 사람.",
+  "남성으로 태어난 사람.",
+  "동서남북의 네 방위 중의 하나로 나침반의 에스 극이 가리키는 쪽."
+]
+```
+
+
+##### For Korean example sentences
+```elixir
+KoreanDictionary.korean_example_sentences("공부하다")
 ```
 
 which will return a list of example sentences

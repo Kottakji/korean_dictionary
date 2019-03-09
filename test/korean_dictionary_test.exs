@@ -100,10 +100,24 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
     end
   end
 
+  describe "We can translate Korean to Korean" do
+    @tag :current
+    test "남" do
+      assert_value(
+        KoreanDictionary.korean_to_korean("남") == [
+          "내가 아닌 다른 사람.",
+          "나와 관계가 없거나 관계가 끊어진 사람.",
+          "남성으로 태어난 사람.",
+          "동서남북의 네 방위 중의 하나로 나침반의 에스 극이 가리키는 쪽."
+        ]
+      )
+    end
+  end
+
   describe "We can translate Korean to English example sentences" do
     test "한국어" do
       assert_value(
-        KoreanDictionary.korean_to_english_example_sentences("한국어") == [
+        KoreanDictionary.korean_example_sentences("한국어") == [
           "이 오페라는 한국어로 공연한대.",
           "한국어에는 특별한 나이를 가리키는 말이 여럿 있다.",
           "한국어는 강세가 없어서 나는 강세를 가진 언어를 배우는 게 어려웠다.",
@@ -120,7 +134,7 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
 
     test "어렵다" do
       assert_value(
-        KoreanDictionary.korean_to_english_example_sentences("어렵다") == [
+        KoreanDictionary.korean_example_sentences("어렵다") == [
           "가계가 어렵다.",
           "가누기 어렵다.",
           "양 팀의 실력이 비슷해서 오늘 경기는 누가 이길지 가늠이 어렵다.",
@@ -137,7 +151,7 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
 
     test "예쁘다" do
       assert_value(
-        KoreanDictionary.korean_to_english_example_sentences("예쁘다") == [
+        KoreanDictionary.korean_example_sentences("예쁘다") == [
           "이 반지 참 예쁘다.",
           "그 꽃 가게는 간판에도 꽃 그림이 있어 참 예쁘다.",
           "오늘은 밤하늘이 참 예쁘다.",

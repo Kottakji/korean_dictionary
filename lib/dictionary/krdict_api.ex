@@ -10,6 +10,14 @@ defmodule KoreanDictionary.KRDictAPI do
   end
 
   @doc """
+  Get the Korean word definitions
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "korean") do
+    get_body(korean, "n", "1", "word")
+  end
+
+  @doc """
   Get the English sentence definitions
   https://krdict.korean.go.kr/openApi/openApiInfo
   """
