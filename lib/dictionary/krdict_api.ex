@@ -47,7 +47,7 @@ defmodule KoreanDictionary.KRDictAPI do
           language <>
           "&translated=" <>
           translated <>
-          "&part=" <> type
+          "&part=" <> type, [], [ssl: [ciphers: [{:rsa, :aes_128_gcm, :null, :sha256}]]]
       )
 
     body

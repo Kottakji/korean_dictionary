@@ -101,7 +101,6 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
   end
 
   describe "We can translate Korean to Korean" do
-    @tag :current
     test "남" do
       assert_value(
         KoreanDictionary.korean_to_korean("남") == [

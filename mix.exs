@@ -4,8 +4,8 @@ defmodule KoreanDictionary.MixProject do
   def project do
     [
       app: :korean_dictionary,
-      version: "0.1.1",
-      elixir: "~> 1.8",
+      version: "0.1.2",
+      elixir: "~> 1.9-rc",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
@@ -46,7 +46,7 @@ defmodule KoreanDictionary.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.4"},
+      {:httpoison, "~> 1.5.1"},
       {:exml, "~> 0.1.1"},
       # Only :dev
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},

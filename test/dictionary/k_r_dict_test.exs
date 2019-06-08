@@ -99,7 +99,6 @@ defmodule KoreanDictionary.KRDictTest do
       )
     end
 
-    @tag :current
     test "No definition found" do
       xml = File.read!("test/assets/sentences/no_items.xml")
       assert_value(KRDict.get_all_sentences_from_xml(xml) == [])
