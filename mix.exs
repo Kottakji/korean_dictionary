@@ -4,8 +4,8 @@ defmodule KoreanDictionary.MixProject do
   def project do
     [
       app: :korean_dictionary,
-      version: "0.1.2",
-      elixir: "~> 1.9-rc",
+      version: "0.1.3",
+      elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
@@ -17,7 +17,7 @@ defmodule KoreanDictionary.MixProject do
       docs: [
         main: "KoreanDictionary",
         extras: ["README.md"]
-      ],
+      ]
     ]
   end
 
@@ -36,6 +36,7 @@ defmodule KoreanDictionary.MixProject do
       }
     ]
   end
+
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
@@ -51,7 +52,7 @@ defmodule KoreanDictionary.MixProject do
       # Only :dev
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},
       {:assert_value, ">= 0.0.0", only: [:dev, :test]},
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]
   end
 end

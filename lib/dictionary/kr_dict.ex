@@ -27,17 +27,42 @@ defmodule KoreanDictionary.KRDict do
   Get all the words and definitions from the response xml
   """
   def get_all_words_from_xml(xml) do
+    items =
+      xml
+      |> Exml.parse()
+      |> Exml.get("//item/word")
+      |> List.wrap()
+
+    get_translations(xml, items, 0, [])
+  end
+
+  defp get_translations(_xml, [], _count, acc) do
+    acc
+  end
+
+  defp get_translations(xml, items, count, acc) do
+    [current_item | rest] = items
+
     words =
       xml
       |> Exml.parse()
-      |> Exml.get("//trans_word")
+      # Xpath starts at 1
+      |> Exml.get("//item[#{count + 1}]//trans_word")
+      |> List.wrap()
 
     definitions =
       xml
       |> Exml.parse()
-      |> Exml.get("//trans_dfn")
+      # Xpath starts at 1
+      |> Exml.get("//item[#{count + 1}]//trans_dfn")
+      |> List.wrap()
 
-    zip(words, definitions)
+    get_translations(
+      xml,
+      rest,
+      count + 1,
+      acc ++ [%{word: current_item, translations: Enum.zip(words, definitions)}]
+    )
   end
 
   @doc """
@@ -47,6 +72,7 @@ defmodule KoreanDictionary.KRDict do
     xml
     |> Exml.parse()
     |> Exml.get("/channel/item[word='" <> korean <> "']/sense/definition")
+    |> List.wrap
   end
 
   @doc """
@@ -55,7 +81,8 @@ defmodule KoreanDictionary.KRDict do
   def get_all_sentences_from_xml(xml) do
     case xml
          |> Exml.parse()
-         |> Exml.get("//example") do
+         |> Exml.get("//example")
+          |> List.wrap() do
       nil -> []
       map -> Enum.map(map, fn x -> String.trim(x) end)
     end

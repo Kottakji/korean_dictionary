@@ -7,7 +7,10 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
     test "한국어" do
       assert_value(
         KoreanDictionary.korean_to_english("한국어") == [
-          {"Korean; Korean language", "The language used by the Korean people."}
+          %{
+            translations: [{"Korean; Korean language", "The language used by the Korean people."}],
+            word: "한국어"
+          }
         ]
       )
     end
@@ -19,55 +22,71 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
     test "남" do
       assert_value(
         KoreanDictionary.korean_to_english("남") == [
-          {"others; another person", "A person other than me."},
-          {"stranger", "A person who has no relationship or has broken a relationship with me."},
-          {"male; man", "A person born as a man."},
-          {
-            "south",
-            "One of four directions, east, west, south, and north, at which the S needle of a compass points."
+          %{
+            translations: [
+              {"others; another person", "A person other than me."},
+              {"stranger",
+               "A person who has no relationship or has broken a relationship with me."}
+            ],
+            word: "남"
           },
-          {"nam-", "A prefix used to mean a male."},
-          {
-            "-nam",
-            "(formal, highly addressee-lowering) A sentence-final ending used when asking oneself or complaining about a certain fact."
+          %{translations: [{"male; man", "A person born as a man."}], word: "남"},
+          %{
+            translations: [
+              {"south",
+               "One of four directions, east, west, south, and north, at which the S needle of a compass points."}
+            ],
+            word: "남"
           },
-          {"-nam", "A suffix used to mean a man."},
-          {
-            "persons unrelated to each other",
-            "People who are not related to each other, or the relationship between them."
+          %{translations: [{"nam-", "A prefix used to mean a male."}], word: "남-"},
+          %{
+            translations: [
+              {"-nam",
+               "(formal, highly addressee-lowering) A sentence-final ending used when asking oneself or complaining about a certain fact."}
+            ],
+            word: "-남"
           },
-          {"leave", "To leave part of something without using it up. "},
-          {"make profit", "To cause profits to be made."},
-          {
-            "leave; cause to stay",
-            "To make something or someone remain where he/she or it was without leaving. "
+          %{translations: [{"-nam", "A suffix used to mean a man."}], word: "-남"},
+          %{
+            translations: [
+              {"persons unrelated to each other",
+               "People who are not related to each other, or the relationship between them."}
+            ],
+            word: "남남"
           },
-          {
-            "leave; hand down",
-            "To cause something not to be forgotten, or to be handed down until later. "
+          %{
+            translations: [
+              {"leave", "To leave part of something without using it up. "},
+              {"make profit", "To cause profits to be made."},
+              {"leave; cause to stay",
+               "To make something or someone remain where he/she or it was without leaving. "},
+              {"leave; hand down",
+               "To cause something not to be forgotten, or to be handed down until later. "},
+              {"hand down", "To hand down one's property, etc., to posterity. "},
+              {"leave; imprint",
+               "To cause one's feelings or memory to last without disappearing. "},
+              {"leave; cause to occur",
+               "To cause something to occur as a result of a certain affair or phenomenon. "},
+              {"cause to be left",
+               "To fail to fill up a certain amount of time or reach a certain distance. "}
+            ],
+            word: "남기다"
           },
-          {"hand down", "To hand down one's property, etc., to posterity. "},
-          {"leave; imprint", "To cause one's feelings or memory to last without disappearing. "},
-          {
-            "leave; cause to occur",
-            "To cause something to occur as a result of a certain affair or phenomenon. "
-          },
-          {
-            "cause to be left",
-            "To fail to fill up a certain amount of time or reach a certain distance. "
-          },
-          {"man and woman", "A man and a woman."},
-          {"remain; be left", "For part of something to remain without being used up. "},
-          {"be profitable", "For profits to occur. "},
-          {"be left", "For the remainder to occur in doing the division. "},
-          {"remain; stay", "To remain where one was without leaving. "},
-          {"be left; be remembered", "To not be forgotten. "},
-          {"hand down", "To hand down something until later. "},
-          {
-            "remain; be left",
-            "For a certain state to come to occur as a result of a certain situation. "
-          },
-          {"exceed; go beyond", "To go beyond limit. "}
+          %{translations: [{"man and woman", "A man and a woman."}], word: "남녀"},
+          %{
+            translations: [
+              {"remain; be left", "For part of something to remain without being used up. "},
+              {"be profitable", "For profits to occur. "},
+              {"be left", "For the remainder to occur in doing the division. "},
+              {"remain; stay", "To remain where one was without leaving. "},
+              {"be left; be remembered", "To not be forgotten. "},
+              {"hand down", "To hand down something until later. "},
+              {"remain; be left",
+               "For a certain state to come to occur as a result of a certain situation. "},
+              {"exceed; go beyond", "To go beyond limit. "}
+            ],
+            word: "남다"
+          }
         ]
       )
     end
@@ -75,13 +94,18 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
     test "어렵다" do
       assert_value(
         KoreanDictionary.korean_to_english("어렵다") == [
-          {"difficult; challenging", "Very complicated or hard to do."},
-          {"difficult; hard", "Being in serious trouble or suffering great hardship."},
-          {"difficult", "Not easy to understand some words or a piece of writing."},
-          {"difficult", "Hard to make a living because one is poor."},
-          {"difficult", "Fastidious and not well-rounded in personality."},
-          {"difficult", "Low in possibility."},
-          {"difficult", "Awkward and cautious because one feels distant to someone else."}
+          %{
+            translations: [
+              {"difficult; challenging", "Very complicated or hard to do."},
+              {"difficult; hard", "Being in serious trouble or suffering great hardship."},
+              {"difficult", "Not easy to understand some words or a piece of writing."},
+              {"difficult", "Hard to make a living because one is poor."},
+              {"difficult", "Fastidious and not well-rounded in personality."},
+              {"difficult", "Low in possibility."},
+              {"difficult", "Awkward and cautious because one feels distant to someone else."}
+            ],
+            word: "어렵다"
+          }
         ]
       )
     end
@@ -89,12 +113,17 @@ defmodule KoreanDictionary.KoreanDictionaryTest do
     test "예쁘다" do
       assert_value(
         KoreanDictionary.korean_to_english("예쁘다") == [
-          {"pretty; beautiful; comely",
-           "The appearance of someone or something looking good and beautiful."},
-          {"adorable",
-           "One's behavior, movements, way of speaking, etc., being lovely and cute."},
-          {"nice; good",
-           "A child making one feel satisfied because he/she behaves correctly and does what he/she is told."}
+          %{
+            translations: [
+              {"pretty; beautiful; comely",
+               "The appearance of someone or something looking good and beautiful."},
+              {"adorable",
+               "One's behavior, movements, way of speaking, etc., being lovely and cute."},
+              {"nice; good",
+               "A child making one feel satisfied because he/she behaves correctly and does what he/she is told."}
+            ],
+            word: "예쁘다"
+          }
         ]
       )
     end

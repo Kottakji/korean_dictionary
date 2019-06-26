@@ -23,18 +23,77 @@ Add to mix.exs
 ```elixir
 def deps do
   [
-    {:korean_dictionary, "~> 0.1.2"}
+    {:korean_dictionary, "~> 0.1.3"}
   ]
 end
 ```
 
 ##### For English word definitions
 ```elixir
-KoreanDictionary.korean_to_english("한국어")
+KoreanDictionary.korean_to_english("한국")  
 ```
-which will return a list with tuples {word, definition}
+which will return:
 ```elixir
-[{"Korean; Korean language", "The language used by the Korean people."}]
+[
+  %{
+    translations: [
+      {"Korea",
+       "A country located in East Asia; it consists of the Korean Peninsula and affiliated islands; divided into South Korea and North Korea since the 1953 ceasefire agreement, it is called either the Republic of Korea or South Korea; the official language is Korean and the capital is Seoul."}
+    ],
+    word: "한국"
+  },
+  %{
+    translations: [
+      {"Korean; Korean language", "The language used by the Korean people."}
+    ],
+    word: "한국말"
+  },
+  %{
+    translations: [
+      {"Korean; Korean language", "The language used by the Korean people."}
+    ],
+    word: "한국어"
+  },
+  %{
+    translations: [
+      {"Korean; Korean people",
+       "A person who has the nationality of Republic of Korea or a descendent of a Korean lineage and spirit."}
+    ],
+    word: "한국인"
+  },
+  %{
+    translations: [
+      {"being Korean; Korean style",
+       "A state of having a unique quality of Korea or being right for Korea. "}
+    ],
+    word: "한국적"
+  },
+  %{
+    translations: [
+      {"Korean ",
+       "Having a unique quality of Korea or being congruous to Korea."}
+    ],
+    word: "한국적"
+  },
+  %{
+    translations: [
+      {"Korean beauty; Korean aesthetics ",
+       "The beauty of Korea, or Korean aesthetic appeal.  "}
+    ],
+    word: "한국미"
+  },
+  %{
+    translations: [{"Korean history", "The history of Korea. "}],
+    word: "한국사"
+  },
+  %{
+    translations: [
+      {"Korean studies",
+       "A field of study that studies Korean history, geology, culture, politics, economy, etc. "}
+    ],
+    word: "한국학"
+  }
+]
 ```
 
 ##### For Korean to Korean (with an 'easy' explanation describing the word)
@@ -61,8 +120,10 @@ KoreanDictionary.korean_example_sentences("공부하다")
 which will return a list of example sentences
 ```elixir
 [
-  "이 오페라는 한국어로 공연한대.",
-  "한국어에는 특별한 나이를 가리키는 말이 여럿 있다.",
-  "한국어는 강세가 없어서 나는 강세를 가진 언어를 배우는 게 어려웠다."
+"건축학을 공부하다.", "게을리 공부하다.",
+ "경영학을 공부하다.", "경쟁적으로 공부하다.",
+ "경전을 공부하다.", "고대사를 공부하다.",
+ "고전 음악을 공부하다.", "고학으로 공부하다.",
+ "착실히 공부하다.", "장학금으로 공부하다."
 ]
 ```

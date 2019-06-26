@@ -13,7 +13,6 @@ defmodule KoreanDictionary do
   """
   defdelegate korean_to_english(korean), to: KRDict
 
-
   @doc """
   Translate Korean to Korean
   Returns the word definitions in a list
