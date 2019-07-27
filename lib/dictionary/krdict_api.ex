@@ -49,7 +49,11 @@ defmodule KoreanDictionary.KRDictAPI do
           translated <>
           "&part=" <> type,
         [],
-        ssl: [ciphers: [{:rsa, :aes_128_gcm, :null, :sha256}]]
+        [
+          ssl: [ciphers: [{:rsa, :aes_128_gcm, :null, :sha256}]],
+          timeout: 50_000,
+          recv_timeout: 50_000,
+        ]
       )
 
     body
