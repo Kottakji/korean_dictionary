@@ -23,7 +23,7 @@ Add to mix.exs
 ```elixir
 def deps do
   [
-    {:korean_dictionary, "~> 0.1.4"}
+    {:korean_dictionary, "~> 0.3.0"}
   ]
 end
 ```

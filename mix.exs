@@ -4,7 +4,7 @@ defmodule KoreanDictionary.MixProject do
   def project do
     [
       app: :korean_dictionary,
-      version: "0.2.0",
+      version: "0.3.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -23,7 +23,7 @@ defmodule KoreanDictionary.MixProject do
 
   defp description do
     "A Korean dictionary based on KRDict\n
-    Supports Korean to English words and sentences\n
+    Supports multiple languages\n
     Requires an API key for KRDict (which is free)\n
     Get your key at https://krdict.korean.go.kr/openApi/openApiInfo"
   end
@@ -52,7 +52,7 @@ defmodule KoreanDictionary.MixProject do
       # Only :dev
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},
       {:assert_value, ">= 0.0.0", only: [:dev, :test]},
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
     ]
   end
 end

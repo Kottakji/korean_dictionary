@@ -15,6 +15,51 @@ defmodule KoreanDictionary.KRDict do
     |> get_all_korean_words_from_xml(korean)
   end
 
+  def korean_to_french(korean) do
+    KRDictAPI.get_words(korean, "french")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_spanish(korean) do
+    KRDictAPI.get_words(korean, "spanish")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_russian(korean) do
+    KRDictAPI.get_words(korean, "russian")
+    |> get_all_words_from_xml
+  end
+  
+  def korean_to_arabian(korean) do
+    KRDictAPI.get_words(korean, "arabian")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_mongolian(korean) do
+    KRDictAPI.get_words(korean, "mongolian")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_vietnamese(korean) do
+    KRDictAPI.get_words(korean, "vietnamese")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_thai(korean) do
+    KRDictAPI.get_words(korean, "thai")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_indonesian(korean) do
+    KRDictAPI.get_words(korean, "indonesian")
+    |> get_all_words_from_xml
+  end
+
+  def korean_to_japanese(korean) do
+    KRDictAPI.get_words(korean, "japanese")
+    |> get_all_words_from_xml
+  end
+
   @doc """
   Translate to a list of example sentences
   """
@@ -72,7 +117,7 @@ defmodule KoreanDictionary.KRDict do
     xml
     |> Exml.parse()
     |> Exml.get("/channel/item[word='" <> korean <> "']/sense/definition")
-    |> List.wrap
+    |> List.wrap()
   end
 
   @doc """
@@ -82,7 +127,7 @@ defmodule KoreanDictionary.KRDict do
     case xml
          |> Exml.parse()
          |> Exml.get("//example")
-          |> List.wrap() do
+         |> List.wrap() do
       nil -> []
       map -> Enum.map(map, fn x -> String.trim(x) end)
     end

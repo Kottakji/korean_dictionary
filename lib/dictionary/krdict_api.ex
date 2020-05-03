@@ -18,6 +18,79 @@ defmodule KoreanDictionary.KRDictAPI do
   end
 
   @doc """
+  Get the Spanish translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "spanish") do
+    get_body(korean, "y", "4", "word")
+  end
+
+  @doc """
+  Get the French translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "french") do
+    get_body(korean, "y", "3", "word")
+  end
+
+  @doc """
+  Get the Arabian translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "arabian") do
+    get_body(korean, "y", "5", "word")
+  end
+  
+  @doc """
+  Get the Russian translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "russian") do
+    get_body(korean, "y", "10", "word")
+  end
+
+
+  @doc """
+  Get the Thai translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "thai") do
+    get_body(korean, "y", "8", "word")
+  end
+
+  @doc """
+  Get the Indonesian translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "indonesian") do
+    get_body(korean, "y", "9", "word")
+  end
+
+  @doc """
+  Get the Vietnamese translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "vietnamese") do
+    get_body(korean, "y", "7", "word")
+  end
+
+  @doc """
+  Get the Japanese translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "japanese") do
+    get_body(korean, "y", "2", "word")
+  end
+
+  @doc """
+  Get the Mongolian translations
+  https://krdict.korean.go.kr/openApi/openApiInfo
+  """
+  def get_words(korean, "mongolian") do
+    get_body(korean, "y", "6", "word")
+  end
+  
+  @doc """
   Get the Korean sentence definitions
   https://krdict.korean.go.kr/openApi/openApiInfo
   """
@@ -49,11 +122,9 @@ defmodule KoreanDictionary.KRDictAPI do
           translated <>
           "&part=" <> type,
         [],
-        [
-          ssl: [ciphers: [{:rsa, :aes_128_gcm, :null, :sha256}]],
-          timeout: 50_000,
-          recv_timeout: 50_000,
-        ]
+        ssl: [ciphers: [{:rsa, :aes_128_gcm, :null, :sha256}]],
+        timeout: 50_000,
+        recv_timeout: 50_000
       )
 
     body
