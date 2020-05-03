@@ -72,7 +72,7 @@ defmodule KoreanDictionary do
   Translate Korean to Russian\n
   Returns the word definitions in a tuple {Russian word, definition}
   """
-  defdelegate korean_to_russia(korean), to: KRDict
+  defdelegate korean_to_russian(korean), to: KRDict
   
   @doc """
   Returns example sentences in a list\n
